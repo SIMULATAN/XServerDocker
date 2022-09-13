@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  xserver:
+    build: .
+    environment:
+      # IMPORTANT: Change this if you adapt this config!
+      VNC_PASSWORD: vnctest
+    ports:
+      - 5900:5900
